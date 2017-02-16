@@ -1,15 +1,15 @@
 //
-//  NatWeexTransfer.m
+//  WeexNatTransfer.m
 //
 //  Created by huangyake on 17/1/7.
 //  Copyright © 2017 Nat. All rights reserved.
 //
 
 
-#import "NatWeexTransfer.h"
+#import "WeexNatTransfer.h"
 #import "NatTransfer.h"
 
-@implementation NatWeexTransfer
+@implementation WeexNatTransfer
 WX_EXPORT_METHOD(@selector(download::))
 WX_EXPORT_METHOD(@selector(upload::))
 
