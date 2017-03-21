@@ -2,13 +2,13 @@
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="nat-network-transfer"
-    version="0.1.0">
+    version="0.1.2">
     <name>nat-network-transfer</name>
-    <description></description>
+    <description>Nat.js module: Network File Transfer (download & upload)</description>
     <license>MIT</license>
-    <keywords>weex,plugin,nat,natjs,upload,download</keywords>
-    <repo>https://github.com/Natjs/weex-nat-network-transfer.git</repo>
-    <issue>https://github.com/Natjs/weex-nat-network-transfer/issues</issue>
+    <keywords>weex,plugin,nat,natjs,network,transfer,upload,download</keywords>
+    <repo>https://github.com/natjs/weex-nat-network-transfer.git</repo>
+    <issue>https://github.com/natjs/weex-nat-network-transfer/issues</issue>
     
      <!-- ios -->
      <platform name="ios">

@@ -1,6 +1,6 @@
 {
   "name": "nat-network-transfer",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "Nat.js module: Network File Transfer (download & upload)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
