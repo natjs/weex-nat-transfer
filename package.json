@@ -1,21 +1,20 @@
 {
-  "name": "nat-network-transfer",
-  "version": "0.1.2",
-  "description": "Nat.js module: Network File Transfer (download & upload)",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Nat",
-    "network",
-    "transfer",
-    "download",
-    "upload",
-    "Weex",
-    "Plugin",
-    "module",
-    "handle"
-  ],
-  "author": "Acathur",
-  "license": "MIT"
+    "version": "0.1.3",
+    "platform": [
+        "ios",
+        "android"
+    ],
+    "description": "Nat.js module: Network File Transfer (download & upload)",
+    "keywords": [
+        "weex",
+        "plugin",
+        "nat",
+        "natjs",
+        "network",
+        "transfer",
+        "upload",
+        "download"
+    ],
+    "license": "MIT",
+    "name": "nat-transfer"
 }

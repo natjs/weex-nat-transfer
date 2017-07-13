@@ -1,9 +1,9 @@
 {
     "namespace": "",
-    "latestVersion": "0.1.2",
+    "latestVersion": "0.1.3",
     "nameInfo": {
-        "fullname": "nat-network-transfer",
-        "name": "nat-network-transfer",
+        "fullname": "nat-transfer",
+        "name": "nat-transfer",
         "namespace": ""
     }
 }

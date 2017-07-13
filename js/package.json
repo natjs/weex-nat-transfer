@@ -1,5 +1,5 @@
 {
-  "name": "weex-nat-network-transfer",
+  "name": "weex-nat-transfer",
   "version": "0.0.1",
   "description": "Nat.js module: Network File Transfer (download & upload)",
   "scripts": {

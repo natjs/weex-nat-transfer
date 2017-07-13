@@ -1,11 +1,11 @@
-# nat-network-transfer
+# nat-transfer
 
 - [Documentation](http://natjs.com/#/#transfer)
-- [Github](https://github.com/natjs/weex-nat-network-transfer)
+- [Github](https://github.com/natjs/weex-nat-transfer)
 
 ## Installation
 ```
-weexpack plugin add nat-network-transfer
+weexpack plugin add nat-transfer
 ```
 
 ```

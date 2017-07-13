@@ -1,7 +1,8 @@
 package com.nat.weex;
 
-import com.nat.network_transfer.HLModuleResultListener;
-import com.nat.network_transfer.HLTransferModule;
+import com.nat.transfer.ModuleResultListener;
+import com.nat.transfer.TransferModule;
+
 import com.taobao.weex.annotation.JSMethod;
 import com.taobao.weex.bridge.JSCallback;
 import com.taobao.weex.common.WXModule;
@@ -11,11 +12,11 @@ import com.taobao.weex.common.WXModule;
  * Copyright (c) 2017 Nat. All rights reserved.
  */
 
-public class NetworkTransferModule extends WXModule {
+public class Transfer extends WXModule {
 
     @JSMethod
     public void upload(String str, final JSCallback jsCallback){
-        HLTransferModule.getInstance().upload(str, new HLModuleResultListener() {
+        TransferModule.getInstance().upload(str, new ModuleResultListener() {
             @Override
             public void onResult(Object o) {
                 jsCallback.invoke(o);
@@ -25,7 +26,7 @@ public class NetworkTransferModule extends WXModule {
 
     @JSMethod
     public void download(String str, final JSCallback jsCallback){
-        HLTransferModule.getInstance().download(str, new HLModuleResultListener() {
+        TransferModule.getInstance().download(str, new ModuleResultListener() {
             @Override
             public void onResult(Object o) {
                 jsCallback.invokeAndKeepAlive(o);
