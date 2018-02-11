@@ -1,6 +1,6 @@
 # nat-transfer
 
-- [Documentation](http://natjs.com/#/#transfer)
+- [Documentation](http://natjs.com/#/reference/network/transfer)
 - [Github](https://github.com/natjs/weex-nat-transfer)
 
 ## Installation
@@ -14,11 +14,11 @@ npm install natjs --save
 
 ## Usage
 
-Use in weex file (.we)
+Use in weex project (`.vue`/`.we`)
 
 ```html
 <script>
-import 'Nat' from 'natjs'
+import Nat from 'natjs'
 
 Nat.download({
     url: 'http://domain.com/file'

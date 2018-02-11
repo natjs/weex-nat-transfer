@@ -7,9 +7,12 @@
 
 
 #import "WeexNatTransfer.h"
-#import "NatTransfer.h"
+#import <WeexPluginLoader/WeexPluginLoader.h>
+#import <NatTransfer/NatTransfer.h>
 
 @implementation WeexNatTransfer
+
+WX_PlUGIN_EXPORT_MODULE(nat/transfer, WeexNatTransfer)
 WX_EXPORT_METHOD(@selector(download::))
 WX_EXPORT_METHOD(@selector(upload::))
 
@@ -19,27 +22,26 @@ WX_EXPORT_METHOD(@selector(upload::))
             if (callback) {
                 callback(error);
             }
-        }else{
+        } else {
             if (callback) {
                 callback(result);
             }
         }
-
     }];
 }
-- (void)upload:(NSDictionary *)params :(WXModuleCallback)callback{
-        [[[NatTransfer alloc] init] upload:params :^(id error,id result) {
-            if (error) {
-                if (callback) {
-                    callback(error);
-                }
-            }else{
-                if (callback) {
-                    callback(result);
-                }
-            }
 
-        }];
+- (void)upload:(NSDictionary *)params :(WXModuleCallback)callback{
+    [[[NatTransfer alloc] init] upload:params :^(id error,id result) {
+        if (error) {
+            if (callback) {
+                callback(error);
+            }
+        } else {
+            if (callback) {
+                callback(result);
+            }
+        }
+    }];
 }
 
 @end

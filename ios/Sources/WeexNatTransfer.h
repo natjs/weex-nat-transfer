@@ -6,16 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import <WeexSDK/WeexSDK.h>
 
-
 @protocol WeexNatTransferPro <WXModuleProtocol>
+
 - (void)download:(NSDictionary *)params :(WXModuleCallback)callback;
 - (void)upload:(NSDictionary *)params :(WXModuleCallback)callback;
 
 @end
-
 
 @interface WeexNatTransfer : NSObject<WeexNatTransferPro>
 
